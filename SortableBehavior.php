@@ -156,7 +156,7 @@ class SortableBehavior extends Behavior
      */
     public function moveBefore($model)
     {
-        return $this->moveTo($model->getSortablePosition() - 1, false);
+        return $this->moveTo($model->getAttribute($this->sortAttribute) - 1, false);
     }
 
     /**
@@ -165,7 +165,7 @@ class SortableBehavior extends Behavior
      */
     public function moveAfter($model)
     {
-        return $this->moveTo($model->getSortablePosition() + 1, true);
+        return $this->moveTo($model->getAttribute($this->sortAttribute) + 1, true);
     }
 
     /**
