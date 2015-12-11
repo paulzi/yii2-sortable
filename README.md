@@ -91,7 +91,7 @@ public function behaviors()
 
 ## Usage
 
-Getting sort attribute value
+Getting sort attribute value:
 
 ```php
 $model = Sample::findOne(1);
