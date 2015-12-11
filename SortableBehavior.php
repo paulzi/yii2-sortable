@@ -151,7 +151,7 @@ class SortableBehavior extends Behavior
     }
 
     /**
-     * @param ActiveRecord|self $model
+     * @param ActiveRecord $model
      * @return ActiveRecord
      */
     public function moveBefore($model)
@@ -160,7 +160,7 @@ class SortableBehavior extends Behavior
     }
 
     /**
-     * @param ActiveRecord|self $model
+     * @param ActiveRecord $model
      * @return ActiveRecord
      */
     public function moveAfter($model)
