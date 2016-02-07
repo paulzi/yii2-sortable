@@ -41,7 +41,7 @@ class Sample extends \yii\db\ActiveRecord
     public function behaviors() {
         return [
             [
-                'class' => SampleBehavior::className(),
+                'class' => SortableBehavior::className(),
             ],
         ];
     }
