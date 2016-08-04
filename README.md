@@ -148,3 +148,7 @@ $model->reorder(true); // reorder with center zero
 $model = Sample::findOne(2);
 $model->reorder(false); // reorder from zero
 ```
+
+## SortableTrait
+
+You can use optional `SortableTrait`, if you need it (for example, you are using something like `ISortable` interface).
