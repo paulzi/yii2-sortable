@@ -205,6 +205,7 @@ class SortableBehavior extends Behavior
             case self::OPERATION_FIRST:
             case self::OPERATION_LAST:
                 $query = $this->getQueryInternal();
+                $query->orderBy(null);
                 $position = $this->operation === self::OPERATION_LAST ? $query->max($this->sortAttribute) : $query->min($this->sortAttribute);
 
                 $isSelf = false;
